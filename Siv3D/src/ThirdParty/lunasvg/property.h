@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 #include <array>
-
+#include <cstdint>
 namespace lunasvg {
 
 enum class Display
