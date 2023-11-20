@@ -3,21 +3,23 @@
 //
 //	Example non-graphical program
 //
+/*
 # include <Siv3D.hpp> // Siv3D v0.6.13
 SIV3D_SET(EngineOption::Renderer::Headless) // Force non-graphical mode
 void Main()
 {
-	Console << U"\n----------------";
-	Console << U"Hello, Siv3D!";
-	Console << U"You are running a non-graphical program.";
-	Console << U"You can code a graphical program in Linux/App/Main.cpp";
-	Console << U"----------------\n";
+        Console << U"\n----------------";
+        Console << U"Hello, Siv3D!";
+        Console << U"You are running a non-graphical program.";
+        Console << U"You can code a graphical program in Linux/App/Main.cpp";
+        Console << U"----------------\n";
 }
+*/
 //
 /////////////////
 
 
-/*
+
 /////////////////
 //
 //	Example graphical program
@@ -119,4 +121,4 @@ void Main()
 }
 //
 /////////////////
-*/
+

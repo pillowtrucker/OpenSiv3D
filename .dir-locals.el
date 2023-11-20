@@ -1,0 +1,6 @@
+((nil . ((projectile-project-compilation-cmd . "cmake -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -S Linux -B Linux/build;cmake --build Linux/build --parallel 8;cmake -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -S Linux/App -B Linux/App/build; cmake --build Linux/App/build --parallel 8")
+	 (compile-command . "cmake -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -S Linux -B Linux/build;cmake --build Linux/build --parallel 8;cmake -GNinja -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -S Linux/App -B Linux/App/build; cmake --build Linux/App/build --parallel 8")
+         (projectile-project-run-cmd . "ROOT=$(pwd);cd Linux/App/build;cmake -DBUILD_TESTING:BOOL=ON .;ctest --output-on-failure --verbose;cd $ROOT")
+	 )
+      )
+ )
