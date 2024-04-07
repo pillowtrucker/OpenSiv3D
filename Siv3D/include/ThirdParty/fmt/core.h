@@ -15,7 +15,7 @@
 #include <limits>
 #include <string>
 #include <type_traits>
-
+#include <cstdint>
 // The fmt library version in the form major * 10000 + minor * 100 + patch.
 #define FMT_VERSION 80101
 

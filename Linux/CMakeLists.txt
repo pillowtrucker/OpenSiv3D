@@ -6,13 +6,15 @@ project(OpenSiv3D_Linux
     HOMEPAGE_URL "https://github.com/Siv3D/OpenSiv3D"
     DESCRIPTION "A C++20 framework for creative coding (2D/3D games, media art, visualizers, and simulators)."
 )
-
+add_compile_definitions(BOOST_ASIO_HAS_STD_INVOKE_RESULT)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Find required packages
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(SIV3D_THIRD_PARTY REQUIRED alsa libavcodec libavformat libavutil libcurl freetype2 gl glib-2.0 gtk+-3.0 harfbuzz libmpg123 ogg opencv4 opus opusfile libpng soundtouch libswresample libtiff-4 libturbojpeg uuid vorbis vorbisenc vorbisfile libwebp x11 glu xft zlib)
-#find_package(Boost 1.71.0...1.74.0 REQUIRED)
 find_package(Boost 1.74.0 EXACT REQUIRED)
+#find_package(Boost 1.78.0 REQUIRED)
+
 message(STATUS "[info] Boost_INCLUDE_DIRS: ${Boost_INCLUDE_DIRS}")
 message(STATUS "[info] SIV3D_THIRD_PARTY_INCLUDE_DIRS: ${SIV3D_THIRD_PARTY_INCLUDE_DIRS}")
 
@@ -1316,7 +1318,7 @@ set(SIV3D_INTERNAL_INCLUDE_DIRS
   ../Siv3D/src/ThirdParty/freetype
   ../Siv3D/src/ThirdParty/skia
   ../Siv3D/src/ThirdParty/soloud/include
-#  ../Siv3D/Dependencies/boost_1_74_0
+#  ../Dependencies/boost_1_74_0
   ${SIV3D_THIRD_PARTY_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
 )

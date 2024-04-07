@@ -15,7 +15,7 @@
 # if  __has_include(<compare>)
 #	include <compare>
 # endif
-
+#include <cstdint>
 # include "Common.hpp"
 # include "FormatData.hpp"
 # include "SIMD.hpp"
